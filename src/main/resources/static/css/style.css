@@ -1,0 +1,284 @@
+:root{
+    --c-dark: #d2d4d4;
+    --c-brand: #bfcaca;
+    --c-brand-light: rgba(24, 24, 25, 0.95);
+    --c-brand-rgb:249, 218, 219;
+    --c-body: rgba(16, 28, 16, 0.98);
+    --c-cselect: rgba(30, 48, 30, 0.75);
+    --font-base:sans-serif;
+    --box-shadow:0px 2px 4px rgb(5, 5, 5);
+    --transition:all 0.5s ease;
+}
+
+.theme-shadow{
+    box-shadow: var(--box-shadow);
+}
+
+body{
+    font-family: var(--font-base);
+    line-height:1.7;
+    background-color:var(--c-body) ;
+    color:var(--c-brand);
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.section-padding{
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+.theme-shadow{
+    box-shadow: var(--box-shadow);
+}
+
+.btn{
+    font-weight: 600;
+    font-size:14px;
+    position: relative;
+    border-radius:0 ;
+    padding: 10px 20px;
+    outline: none;
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1); /* Remove the default focus shadow */
+    border: 2px solid var(--c-brand-light);
+    z-index: -1;
+}
+
+.btn-brand{
+    background-color: #199389;
+    border-color: #199389;
+    color:var(--c-brand);
+    border-radius: 6px;
+}
+
+.btn-brand:hover{
+    background-color: #199389;
+    border-color: #199389;
+    color:var(--c-brand);
+}
+
+#flightSearch{
+    position: relative;
+    z-index: 2;
+}
+
+#flightSearch::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    color:var(--c-brand);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.section-title{
+    margin-bottom: 0px;
+}
+
+.section-title .line{
+    width: 40px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+}
+
+.section-title p{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    color:var(--c-brand);
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.custom-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    right:10px;
+    left:10px;
+    padding: 10px;
+    font-size: 16px;
+    border: #050505FF;
+    border-bottom: 1px solid #050505FF;
+    border-radius: 4px;
+    background-color: var(--c-brand-light);
+    color: var(--c-brand);
+    font-family: var(--font-base);
+}
+
+.custom-select-label label{
+    padding: 10px;
+    font-size: 20px;
+    background: var(--c-brand-light);
+    font-family: var(--font-base);
+}
+
+.custom-select-label::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 6px solid var(--c-brand);
+}
+
+.custom-select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 0;
+    height: 0;
+    margin-top: -3px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #bfcaca;
+    pointer-events: none;
+    color: var(--c-brand);
+}
+
+.custom-select-cabin-label label{
+    padding: 10px;
+    font-size: 20px;
+    background: var(--c-cselect);
+    font-family: var(--font-base);
+}
+
+.custom-select-cabin-label::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 6px solid var(--c-brand);
+}
+
+.custom-select-cabin select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    right:10px;
+    left:10px;
+    padding: 10px;
+    font-size: 16px;
+    border: #7e7d7d;
+    border-bottom: 1px solid #6a6969;
+    border-radius: 4px;
+    background-color: var(--c-cselect);
+    color: var(--c-brand);
+    font-family: var(--font-base);
+}
+
+.custom-select-cabin{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.custom-select-cabin::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 0;
+    height: 0;
+    margin-top: -3px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #bfcaca;
+    pointer-events: none;
+    color: var(--c-brand);
+}
+
+.btn{
+    font-weight: 600;
+    font-size: 14px;
+    position: relative;
+    border-radius: 0;
+    padding: 10px 20px;
+    outline: none;
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1); /* Remove the default focus shadow */
+    border: 2px solid var(--c-brand-light);
+    cursor: pointer;
+    z-index: 1; /* Ensure button is above other elements */
+}
+
+.btn-brand{
+    background-color: #47c5b9;
+    border-color: #47c5b9;
+    color:white;
+    border-radius: 4px;
+}
+
+.btn-brand:hover{
+    background-color: #47c5b9;
+    border-color: #47c5b9;
+    color:white;
+}
+
+.card-body {
+    width: 100%;
+    position:relative;
+    background-color: rgba(36, 106, 67, 0.98); /* Adjust this color to match the image background */
+    color: white; /* Adjust this color to match the image text color */
+    border: none;
+    top: 30px;
+    left:20px;
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 6px; /* Add rounded corners */
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Additional styling for text and elements inside the card body */
+.card-body .card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:white; /* Adjust the card title color */
+}
+
+.card-body .card-text {
+    font-size: 12px;
+    margin-bottom: 0px;
+    color: white; /* Adjust the card text color */
+}
+
+.card-body img {
+    margin-bottom: 10px; /* Add spacing below the image */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-wrapper {
+    flex: 1 1 calc(50% - 5px); /* Two cards per row with some spacing */
+    margin: 10px; /* Adjust margin for spacing */
+}
+
+#results{
+    margin-right: -250px;
+}
+
+
+
