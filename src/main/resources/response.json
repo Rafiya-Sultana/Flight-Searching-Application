@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "min_business_miles": null,
+      "min_business_tax": null,
+      "min_economy_miles": 53500,
+      "min_economy_tax": 189,
+      "min_first_miles": null,
+      "min_first_tax": null,
+      "partner_program": "KLM"
+    },
+    {
+      "min_business_miles": 144600,
+      "min_business_tax": 177,
+      "min_economy_miles": 55200,
+      "min_economy_tax": 158,
+      "min_first_miles": null,
+      "min_first_tax": null,
+      "partner_program": "Qantas"
+    }
+  ]
+}
